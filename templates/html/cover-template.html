@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 900px; height: 383px;
+    display: flex; align-items: center; justify-content: center;
+    background:
+      radial-gradient(circle at 20% 18%, rgba(249,115,22,0.18), transparent 34%),
+      radial-gradient(circle at 78% 82%, rgba(34,211,238,0.14), transparent 30%),
+      linear-gradient(135deg, #0b1220 0%, #111827 45%, #060b16 100%);
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    overflow: hidden; position: relative;
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(148,163,184,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(148,163,184,0.06) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+  .glow-line {
+    position: absolute; left: 42px; top: 92px;
+    width: 4px; height: 196px; border-radius: 999px;
+    background: linear-gradient(to bottom, rgba(249,115,22,0), rgba(249,115,22,0.95), rgba(220,38,38,0.75), rgba(220,38,38,0));
+    box-shadow: 0 0 24px rgba(220,38,38,0.2);
+  }
+  .bg-word {
+    position: absolute; right: -10px; top: 50%; transform: translateY(-50%);
+    font-size: 140px; font-weight: 900; line-height: 1; letter-spacing: -8px;
+    color: rgba(220,38,38,0.06); user-select: none;
+  }
+  .content {
+    position: relative; z-index: 2;
+    max-width: 780px; text-align: center; padding: 0 50px;
+  }
+  .tags { display: flex; justify-content: center; gap: 10px; margin-bottom: 18px; }
+  .tag {
+    padding: 4px 14px; border-radius: 999px;
+    font-size: 11px; font-weight: 700; letter-spacing: 1.4px;
+  }
+  .tag-red { color: #fca5a5; border: 1px solid rgba(220,38,38,0.35); background: rgba(220,38,38,0.1); }
+  .tag-orange { color: #fdba74; border: 1px solid rgba(249,115,22,0.35); background: rgba(249,115,22,0.1); }
+  .headline {
+    font-size: 38px; font-weight: 900; line-height: 1.28;
+    letter-spacing: -1.2px; color: rgba(255,255,255,0.96);
+  }
+  .headline .accent {
+    background: linear-gradient(135deg, #fb923c 0%, #fdba74 45%, #fde68a 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .headline .accent-red {
+    background: linear-gradient(135deg, #ef4444 0%, #fca5a5 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .subline {
+    margin-top: 16px; font-size: 18px; line-height: 1.6;
+    letter-spacing: 1px; color: rgba(255,255,255,0.58);
+  }
+  .subline .keyword { color: #f8fafc; font-weight: 700; }
+  .metrics { display: flex; justify-content: center; gap: 16px; margin-top: 18px; }
+  .metric {
+    min-width: 126px; padding: 10px 14px; border-radius: 14px;
+    background: rgba(15,23,42,0.48); border: 1px solid rgba(148,163,184,0.16);
+    backdrop-filter: blur(4px);
+  }
+  .metric .num { display: block; font-size: 24px; font-weight: 900; color: #f8fafc; }
+  .metric .label {
+    display: block; margin-top: 2px; font-size: 11px;
+    letter-spacing: 1.2px; color: rgba(255,255,255,0.45);
+  }
+  .source {
+    position: absolute; right: 28px; bottom: 18px;
+    font-size: 12px; letter-spacing: 1px; color: rgba(255,255,255,0.24);
+  }
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<div class="glow-line"></div>
+<div class="bg-word"><!-- 月份英文 --></div>
+
+<div class="content">
+  <div class="tags">
+    <span class="tag tag-red"><!-- 标签1 --></span>
+    <span class="tag tag-orange"><!-- 标签2 --></span>
+  </div>
+  <div class="headline">
+    <!-- 主标题，用 accent/accent-red 标记关键词 -->
+  </div>
+  <div class="subline">
+    <!-- 副标题 -->
+  </div>
+  <div class="metrics">
+    <!-- 2-3 个数据指标 -->
+  </div>
+</div>
+
+<div class="source">{{BRAND_FOOTER}}</div>
+</body>
+</html>

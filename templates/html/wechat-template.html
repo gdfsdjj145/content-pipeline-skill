@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    font-size: 15px;
+    line-height: 2;
+    color: #374151;
+    letter-spacing: 0.4px;
+    background: #ffffff;
+  }
+  p { margin: 1em 0; text-align: justify; }
+  strong { color: #111827; }
+  ul { padding-left: 1.2em; margin: 1em 0; }
+  li { margin: 0.65em 0; }
+  .divider {
+    text-align: center;
+    margin: 2em 0;
+    color: #d1d5db;
+    font-size: 14px;
+    letter-spacing: 8px;
+  }
+  .big-num {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ea580c;
+    letter-spacing: 1px;
+  }
+  .hl {
+    background: linear-gradient(to top, #ffedd5 52%, transparent 52%);
+    padding: 0 3px;
+    font-weight: 700;
+    color: #111827;
+  }
+  .hl-cyan {
+    background: linear-gradient(to top, #cffafe 52%, transparent 52%);
+    padding: 0 3px;
+    font-weight: 700;
+    color: #111827;
+  }
+  .hl-red {
+    background: linear-gradient(to top, #fee2e2 52%, transparent 52%);
+    padding: 0 3px;
+    font-weight: 700;
+    color: #991b1b;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #111827;
+    margin: 2em 0 0.8em;
+    padding-left: 12px;
+    border-left: 4px solid #f97316;
+  }
+  .data-card {
+    background: linear-gradient(135deg, #fff7ed 0%, #fffbeb 100%);
+    border: 1px solid #fed7aa;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 1.4em 0;
+  }
+  .data-card p { margin: 0.45em 0; }
+  .quote-box {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 1.4em 0;
+  }
+  .quote-box p { margin: 0.4em 0; }
+  .compare-box {
+    background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 1.4em 0;
+  }
+  .compare-box p { margin: 0.45em 0; }
+  .pit-box {
+    background: #ecfeff;
+    border: 1px solid #a5f3fc;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 1.4em 0;
+  }
+  .pit-label {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #0891b2;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+  }
+  .danger-box {
+    background: linear-gradient(135deg, #fef2f2 0%, #fff1f2 100%);
+    border: 1px solid #fecaca;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 1.4em 0;
+  }
+  .danger-label {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #dc2626;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+  }
+  blockquote {
+    border-left: 4px solid #f97316;
+    margin: 1.5em 0;
+    padding: 12px 18px;
+    background: #fff7ed;
+    border-radius: 0 10px 10px 0;
+    color: #9a3412;
+  }
+  blockquote p { margin: 0.35em 0; }
+  .golden {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #9a3412;
+    margin: 1.8em 0;
+    line-height: 2.1;
+  }
+  .author-card {
+    background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 2em 0 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 2;
+    color: #9a3412;
+  }
+  .author-card strong { color: #7c2d12; }
+  .checklist {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 1.4em 0;
+  }
+  .checklist li { list-style: none; padding-left: 0; }
+  .checklist li::before { content: "✅ "; }
+</style>
+</head>
+<body>
+<!-- 文章内容 -->
+<!-- 请将正文内容放在此处 -->
+
+<!-- 作者卡片 + 引流 -->
+<div class="author-card">
+  <p>{{CTA_TEXT}}</p>
+  <p><strong>{{BRAND_NAME}}</strong> · {{BRAND_AUTHOR}}</p>
+</div>
+</body>
+</html>
